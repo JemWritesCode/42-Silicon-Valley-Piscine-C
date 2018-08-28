@@ -1,7 +1,7 @@
 # 42SiliconValley
 42 Programming School Assignments
 
-I left in my extra files that I used for testing. Don't submit files that the PDF doesn't ask for. Try to do it on your own first! 
+I left in my extra files that I used for testing. Don't submit files that the PDF doesn't ask for. Try to do it on your own first! Failure is normal!
 
 #### Day00
 I didn't tar ex02 correctly so the symbolic link wasn't preserved.
