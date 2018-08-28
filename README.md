@@ -6,6 +6,6 @@ I left in my extra files that I used for testing. Don't submit files that the PD
 #### Day00
 I didn't tar ex02 correctly so the symbolic link wasn't preserved.
 
-ex01: OK | ex02: KO | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex08: OK | ex09: OK | ex10: OK | ex11: OK
+ex01: OK :white_check_mark:| ex02: KO :x:| ex03: OK :white_check_mark:| ex04: OK :white_check_mark:| ex05: OK :white_check_mark:| ex06: OK :white_check_mark:| ex07: OK :white_check_mark:| ex08: OK :white_check_mark:| ex09: OK :white_check_mark:| ex10: OK :white_check_mark:| ex11: OK :white_check_mark:
 
 
