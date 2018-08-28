@@ -1,0 +1,7 @@
+Credentials cache: API:43863
+        Principal: jecope@42.US.ORG
+
+  Issued                Expires               Principal
+Aug 21 20:12:58 2018  Aug 22 06:12:58 2018  krbtgt/42.US.ORG@42.US.ORG
+Aug 21 20:13:03 2018  Aug 22 06:12:58 2018  ldap/ldap-master.42.us.org@42.US.ORG
+Aug 21 20:42:00 2018  Aug 22 06:12:58 2018  host/vgs-fn1.42.us.org@42.US.ORG
