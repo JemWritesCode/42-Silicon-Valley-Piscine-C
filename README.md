@@ -15,6 +15,7 @@ ex01: OK :white_check_mark:| ex02: OK :white_check_mark:| ex03: OK :white_check_
 
 #### Day02
 The automatic checks require files to be written a certain way. This is the wrong way.
+
 ex00: Does not compile :x:| ex01: Does not compile :x:| ex02: Does not compile :x:| ex03: Does not compile :x:
 
 #### Day03
@@ -40,6 +41,7 @@ ex00: KO :x:| ex01: KO :x:| ex02: KO :x:| ex03: KO :x:
 
 #### Day10
 Norminette went down this day, the code should be right aside from that.
+
 ex00: OK :white_check_mark:| ex01: Norme error :x:| ex02: Norme error :x:| ex03: Norme error :x:| ex04: Norme error :x:
 
 #### Day11
