@@ -71,5 +71,5 @@ Prioritized other projects.
 Prioritized other projects. PS, I'm glad we focused on Rush02, there's a memory issue that you have to deal with you run into on BSQ as well.
 
 #### BSQ
-0. We didn't finish but we got a lot of things figured out. I thought it was really great practice!
+0. We didn't finish but we got a lot of things figured out. I thought it was really great practice for the final exam!
 
