@@ -1,7 +1,9 @@
 # 42SiliconValley
-42 Programming School Projects
+42 Programming Piscine Challenge Projects
 
-I left in some extra files that I used for testing. Don't submit files that the PDF doesn't ask for. Try to do it on your own first! Failure is normal!
+Much of this code could be cleaner or more readable-- we have to code under a time limit. Try to make it better! :)
+
+I left in some extra files that I used for testing. Don't submit files that the PDF doesn't ask for. Try to do it on your own first and use other's code as a way to learn to do it better. Failure is normal!
 
 Including the KOs so you can see things that might make you fail.
 
@@ -60,7 +62,7 @@ ex00: OK :white_check_mark:
 Prioritized other projects.
 
 #### Rush02
-100 :white_check_mark: No bonuses.
+100 :white_check_mark: No bonuses. 
 
 #### Sastantua
 Prioritized other projects.
