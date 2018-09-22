@@ -54,7 +54,7 @@ ex00: OK :white_check_mark:
 :white_check_mark: 100 
 
 #### Rush00
-:white_check_mark: 125, got all bonuses correct.(It shows as less on the intranet because of a Moulinette glitch, but our corrector gave us full marks.)
+:white_check_mark: 125, got all bonuses correct.
 
 #### Rush01
 Prioritized other projects.
