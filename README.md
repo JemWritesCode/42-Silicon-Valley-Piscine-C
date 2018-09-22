@@ -31,7 +31,7 @@ ex00: OK :white_check_mark:| ex01: OK :white_check_mark:| ex02: OK :white_check_
 ex00: OK :white_check_mark:| ex01: OK :white_check_mark:| ex02: OK :white_check_mark:| ex03: OK :white_check_mark:
 
 #### Day07
-ex00: OK :white_check_mark:| ex01: OK :white_check_mark:| ex02: OK :white_check_mark:\
+ex00: OK :white_check_mark:| ex01: OK :white_check_mark:| ex02: OK :white_check_mark:
 
 #### Day08
 Prioritized other projects.
