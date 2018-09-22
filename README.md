@@ -1,5 +1,5 @@
 # 42SiliconValley
-42 Programming School Assignments
+42 Programming School Projects
 
 I left in some extra files that I used for testing. Don't submit files that the PDF doesn't ask for. Try to do it on your own first! Failure is normal!
 
