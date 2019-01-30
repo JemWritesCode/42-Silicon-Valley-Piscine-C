@@ -6,19 +6,19 @@
 /*   By: akali <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/11 14:08:02 by akali             #+#    #+#             */
-/*   Updated: 2018/08/12 21:57:36 by jcope            ###   ########.fr       */
+/*   Updated: 2018/08/12 00:37:53 by jcope            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/rush_2.h"
 
-char	*create_char_string(t_list *list)
+char *create_char_string(t_list *list)
 {
-	int		i;
-	char	*str;
-	int		list_length;
-
-	if (!list)
+	int 	i;
+	char 	*str;
+	int 	list_length;
+	
+	if(!list)
 		return (NULL);
 	str = NULL;
 	i = 0;
@@ -34,7 +34,7 @@ char	*create_char_string(t_list *list)
 	return (str);
 }
 
-t_list	*list_create_elem(char c)
+t_list *list_create_elem(char c)
 {
 	t_list *node;
 
@@ -44,11 +44,11 @@ t_list	*list_create_elem(char c)
 	return (node);
 }
 
-void	list_insert_element(t_list **list, char c)
+void list_insert_element(t_list **list, char c)
 {
 	t_list *node;
 
-	if (list && *list)
+	if(list && *list)
 	{
 		node = *list;
 		while (node->next)
@@ -61,25 +61,27 @@ void	list_insert_element(t_list **list, char c)
 	}
 }
 
-t_list	*get_input(void)
+t_list *get_input()
 {
-	t_list	*list;
-	char	buffer;
+	t_list *list;
+	char buffer;
 
 	list = NULL;
-	while (read(0, &buffer, 1) > 0)
+	while(read(0, &buffer, 1) > 0)
 		list_insert_element(&list, buffer);
-	return (list);
+	return (list); 
 }
 
 int		main(void)
 {
-	t_list	*in;
-	char	*compare;
+	t_list *in;
+	char *compare;
 
 	in = get_input();
 	compare = create_char_string(in);
+
 	find_rush_combos(compare);
 	write(1, "\n", 1);
+
 	return (0);
 }

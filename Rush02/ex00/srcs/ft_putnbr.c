@@ -1,59 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utility.c                                          :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akali <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/08/11 14:21:42 by akali             #+#    #+#             */
-/*   Updated: 2018/08/12 21:54:37 by jcope            ###   ########.fr       */
+/*   Created: 2018/07/30 14:52:10 by akali             #+#    #+#             */
+/*   Updated: 2018/07/31 22:58:53 by akali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/rush_2.h"
 
-int		list_size(t_list *list)
+void	ft_putchar(char c)
 {
-	t_list	*ptr;
-	int		count;
-
-	count = 0;
-	if (!list)
-		return (count);
-	ptr = list;
-	while (ptr)
-	{
-		ptr = ptr->next;
-		count++;
-	}
-	return (count);
+	write(1, &c, 1);
 }
 
-int		count_row(char *out)
+void	ft_putnbr(int nb)
 {
-	int row;
-	int i;
-
-	i = 0;
-	row = 0;
-	while (out[i])
+	if (nb <= -2147483648)
 	{
-		if (out[i] == '\n')
-			row++;
-		i++;
+		ft_putchar('-');
+		ft_putchar('2');
+		ft_putnbr(147483648);
+		return ;
 	}
-	return (row);
-}
-
-int		count_col(char *out)
-{
-	int col;
-
-	col = 0;
-	while (*out != '\n' && *out)
+	if (nb > 2147483647)
+		ft_putnbr(2147483647);
+	if (nb < 0)
 	{
-		col++;
-		out++;
+		ft_putchar('-');
+		nb = nb * -1;
 	}
-	return (col);
+	if (nb >= 10)
+		ft_putnbr(nb / 10);
+	ft_putchar((nb % 10) + '0');
 }

@@ -6,67 +6,72 @@
 /*   By: akali <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/28 17:13:26 by akali             #+#    #+#             */
-/*   Updated: 2018/07/28 17:13:28 by akali            ###   ########.fr       */
+/*   Updated: 2018/08/12 00:26:47 by jcope            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include "../includes/rush_2.h"
 
-void	ft_print_row1(int col, int x)
+void	ft_print_row1_02(int col, int x, char *arr, int i)
 {
 	if (col == 1)
-		ft_putchar('A');
+		arr[i] = ('A');
 	else if (col > 1 && col < x)
-		ft_putchar('B');
+		arr[i] = ('B');
 	else
-		ft_putchar('A');
+		arr[i] = ('A');
 }
 
-void	ft_print_row2(int col, int x)
+void	ft_print_row2_02(int col, int x, char *arr, int i)
 {
 	if (col == 1)
-		ft_putchar('B');
+		arr[i] = ('B');
 	else if (col > 1 && col < x)
-		ft_putchar(' ');
+		arr[i] = (' ');
 	else
-		ft_putchar('B');
+		arr[i] = ('B');
 }
 
-void	ft_print_row3(int col, int x)
+void	ft_print_row3_02(int col, int x, char *arr, int i)
 {
 	if (col == 1)
-		ft_putchar('C');
+		arr[i] = ('C');
 	else if (col > 1 && col < x)
-		ft_putchar('B');
+		arr[i] = ('B');
 	else
-		ft_putchar('C');
+		arr[i] = ('C');
 }
 
-void	rush(int x, int y)
+char	*rush_02(int x, int y)
 {
-	int row;
-	int col;
+	int		row;
+	int		col;
+	char	*arr;
+	int		i;
 
+	i = 0;
 	col = 0;
 	row = 0;
+	arr = malloc(sizeof(char) * (x * y));
 	while (++row <= y)
 	{
 		while (++col <= x)
 		{
 			if (row == 1)
-			{
-				ft_print_row1(col, x);
-			}
+				ft_print_row1_02(col, x, arr, i++);
 			else if (row < y)
-			{
-				ft_print_row2(col, x);
-			}
+				ft_print_row2_02(col, x, arr, i++);
 			else
-			{
-				ft_print_row3(col, x);
-			}
+				ft_print_row3_02(col, x, arr, i++);
 		}
-		ft_putchar('\n');
+		arr[i] = ('\n');
+		i++;
 		col = 0;
 	}
+	return (arr);
+}
+
+char	*main_02(int col, int row)
+{
+	return (rush_02(col, row));
 }

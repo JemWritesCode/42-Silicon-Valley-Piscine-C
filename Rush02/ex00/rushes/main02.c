@@ -6,16 +6,24 @@
 /*   By: akali <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/28 15:19:18 by akali             #+#    #+#             */
-/*   Updated: 2018/08/11 15:57:20 by jcope            ###   ########.fr       */
+/*   Updated: 2018/08/12 00:21:08 by jcope            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-void	rush(int x, int y);
-void	ft_atoi(char *str);
 
+#include "../includes/rush_2.h"
 
 int		main(int argc, char **argv)
 {
-	rush(ft_atoi(argv[1]),ft_atoi(argv[2]));
-//	rush(1,2);
-	return (0);
+	char *arr;
+
+	if (argc >= 3)
+	{
+		arr = rush_02(ft_atoi(argv[1]), ft_atoi(argv[2]));
+		while (*arr)
+		{
+			write(1, arr, 1);
+			arr++;
+		}
+		return (0);
+	}
 }
