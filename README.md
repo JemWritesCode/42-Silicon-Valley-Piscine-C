@@ -1,7 +1,6 @@
-# 42SiliconValley
-42 Programming Piscine Challenge Projects
+# 42 Programming Piscine Projects
 
-Much of this code could be cleaner or more readable-- we have to code under a time limit. Try to make it better! :)
+The 42 piscine is the admissions process for the school -- there are coding exercises every day for 4 weeks with the expectation that you work at least 10 hours a day 7 days a week. Much of this code could be cleaner or more readable-- we have to code under a time limit. 
 
 I left in some extra files that I used for testing. Don't submit files that the PDF doesn't ask for. Try to do it on your own first and use other's code as a way to learn to do it better. Failure is normal!
 
